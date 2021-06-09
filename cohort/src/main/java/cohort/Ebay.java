@@ -20,11 +20,11 @@ public class Ebay {
 		Thread.sleep(5000);
 		List<WebElement> lst=driver.findElements(By.xpath("//h3[contains(text(),'Lenovo')]"));
 		String str;
+		System.out.println("Lenovo Computers");
 		for(int i=0;i<lst.size();i++)
 		{
 			str=lst.get(i).getText();
 			System.out.println("name:"+str);
-		 
 
 	    }
 		Thread.sleep(5000);
